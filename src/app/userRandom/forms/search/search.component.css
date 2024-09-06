@@ -1,0 +1,19 @@
+.search-form {
+    width: 500px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    gap: 5px;
+}
+
+.button {
+    height: 56px; width: 56px; ;
+}
+.button:hover {
+    border-color: #3f51b5
+}

@@ -1,0 +1,8 @@
+<main>
+
+    <app-search (search)="receiveSearch($event)"></app-search>  
+    <div *ngIf="dataLength > 0; Else noData;"><app-card [data]="dataResponse"></app-card>   </div>
+<ng-template #noData>
+    <p>Sin informacion</p>
+  </ng-template>
+</main>

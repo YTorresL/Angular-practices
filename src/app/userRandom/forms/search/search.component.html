@@ -1,0 +1,10 @@
+<section><form class="search-form">
+    <mat-form-field class="full-width">
+      <mat-label>users</mat-label>
+      <input matInput placeholder="Maria" [formControl]="search" style="overflow: hidden;">
+    </mat-form-field>
+  </form>
+        <button class="button" (click)="onSearch()">
+          <mat-icon fontIcon="search" style="padding-top: 2px;">search</mat-icon>
+        </button>
+</section>

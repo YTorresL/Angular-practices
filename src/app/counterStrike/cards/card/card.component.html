@@ -1,0 +1,31 @@
+<section>
+    <div class="card" [ngStyle]="{ 'background': 'linear-gradient(' + item.rarity.color + ', #FEE8C9)' }"  *ngFor="let item of data?.data | slice:0:12">
+    <div class="content">
+      <div class="top">
+        <p>{{item.pattern?.name }}</p>
+        <div class="color" [style.background]="item.rarity.color"></div>
+      </div>
+      <div class="middle" [style.background]="item.rarity.color">
+        <div>
+          <p>{{item.rarity.color}}</p>
+          <p>{{item.weapon.name}}</p>
+        </div>
+        <img [src]="item.image" />
+      </div>
+      <div class="bottom"><div>
+          <p>Paint</p>
+          <p>{{item.paint_index}}</p>
+        </div>
+        <div>
+          <p>Min</p>
+          <p>{{item.min_float}}</p>
+        </div>
+        <div>
+          <p>Max</p>
+          <p>{{item.max_float}}</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
